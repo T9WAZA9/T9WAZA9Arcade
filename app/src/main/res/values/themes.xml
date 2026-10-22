@@ -1,0 +1,13 @@
+<resources>
+    <!--
+        Tema base para la Activity (usado antes de que Compose tome el control
+        y mientras el sistema dibuja la ventana). Se apoya en un tema de
+        plataforma para no anadir la dependencia de Material Components XML,
+        que no hace falta en una app 100% Compose.
+    -->
+    <style name="Theme.T9Waza9Arcade" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/ic_launcher_background</item>
+    </style>
+</resources>

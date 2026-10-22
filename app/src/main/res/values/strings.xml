@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">T9WAZA9 ARCADE</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_clips">Clips</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <string name="home_title">T9WAZA9 ARCADE</string>
+    <string name="home_empty_title">Todavia no hay partidas grabadas</string>
+    <string name="home_empty_subtitle">Cuando grabes tu primera partida (Fase 2), aparecera aqui</string>
+
+    <string name="clips_empty_title">No tienes clips guardados</string>
+    <string name="clips_empty_subtitle">Los videos que grabes se mostraran en esta pantalla</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_theme">Tema oscuro</string>
+    <string name="settings_about">Acerca de T9WAZA9 ARCADE</string>
+    <string name="settings_version">Version %1$s</string>
+
+    <string name="state_loading">Cargando…</string>
+    <string name="state_error_title">Ha ocurrido un error</string>
+    <string name="state_error_retry">Reintentar</string>
+</resources>

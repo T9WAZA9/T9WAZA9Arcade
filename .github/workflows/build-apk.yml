@@ -1,0 +1,33 @@
+name: Compilar APK de depuracion
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el codigo del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Configurar Gradle 8.13
+        uses: gradle/actions/setup-gradle@v5
+        with:
+          gradle-version: "8.13"
+
+      - name: Compilar APK de depuracion
+        run: gradle assembleDebug --no-daemon --stacktrace
+
+      - name: Subir el APK generado como artefacto descargable
+        uses: actions/upload-artifact@v4
+        with:
+          name: t9waza9-arcade-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
